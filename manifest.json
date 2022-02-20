@@ -1,0 +1,20 @@
+{
+  "name": "Hello",
+  "version": "1.0.0",
+  "manifest_version": 2,
+  "description": "",
+  "browser_action": {
+    "default_title": "查看",
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.baidu.com/*"],
+      "js": ["jquery-3.6.0.js","baidu.js"]
+    }
+  ],
+  "permissions" : ["tabs", "activeTab"],
+  "chrome_url_overrides": {
+      "newtab": "tabs/newTab.html"
+  }
+}

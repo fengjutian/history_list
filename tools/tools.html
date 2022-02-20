@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tools</title>
+  <link rel="stylesheet" href="./tools.css">
+  <script src='../jquery-3.6.0.js'></script>
+  <script src='../vue@2.6.14.js'></script>
+  <script src=''></script>
+</head>
+<body>
+  <div id='app'>
+    <div v-for='(item, index) in toolsList' :key='index'>
+      <div v-for='(item1, index1) in item.child' :key='index' class='single-tools-box'>
+        qqq
+        <!-- <div>{{item1.name}}</div>
+        <div>
+          <a :href="item1.url" target='_blank'>
+            <img :src="item1.logo" alt="" class='logo-img-box'>
+          </a>
+        </div> -->
+      </div>
+    </div>
+  </div>
+  <script type="module" src='./tools.js'></script>
+  <script type='module'>
+    import { toolsConfig } from '../static/tools/tools.mjs'
+    import { template1 } from './fragmentComponent.js'
+    var app = new Vue({
+      el: '#app',
+      data() {
+        return {
+          message: 'Hello Vue',
+          toolsList: []
+        }
+      },
+      mounted() {
+        this.toolsList = []
+        this.toolsList = toolsConfig
+        console.log('mounted')
+      },
+    })
+  </script>
+</body>
+</html>

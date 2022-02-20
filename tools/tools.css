@@ -1,0 +1,16 @@
+.single-tools-box{
+  border: 1px solid #999999;
+  border-radius: 4px;
+  padding: 20px;
+  display: inline-block;
+}
+
+.single-tools-box .logo-img-box{
+  width: 60px;
+  height: 60px;
+}
+
+.single-tools-box + .single-tools-box{
+  margin-left: 10px;
+}
+
