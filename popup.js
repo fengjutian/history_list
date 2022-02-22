@@ -28,6 +28,12 @@ $(function() {
     chrome.tabs.query({active:true, currentWindow:true}, function (tab) {
         console.log('tab', tab)
     })
+
+    chrome.history.search({text: '', maxResults: 10}, function(data) { 
+      data.forEach(function(page) { 
+       console.log(page.url); 
+      }); 
+    }); 
 })
 
 

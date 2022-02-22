@@ -1,12 +1,18 @@
+@font-face{
+  font-family: '方正启功行楷'; 
+  src: url('../static/方正启功行楷.ttf');
+}
+
 html, body{
     width: 100%;
     height: 100%;
     margin: 0;
     padding: 0;
-    background-image: linear-gradient(180deg, #f66, #f90);
+    /* background-image: linear-gradient(180deg, #f66, #f90); */
     display: flex;
     justify-content: center;
     align-items: center; 
+    font-family: '方正启功行楷'
 }
 
 #new-tab-wrap{
