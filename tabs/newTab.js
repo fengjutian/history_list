@@ -6,6 +6,13 @@ $(document).ready(() => {
   // let newTabWrap_E = $('#new-tab-wrap')
   // newTabWrap_E.css('background', "url(" + imgsList[_randomIndex]['url'] + ") no-repeat center center").css('background-size', 'cover' )
 
+  console.log('chrome', chrome, chrome.history)
+
+  chrome.history.search({text: ''}, function(data) { 
+    data.forEach(function(page) { 
+     console.log(page.url); 
+    }); 
+  }); 
 
   const _body = $('body')
   let colorIndex = Math.floor((Math.random()*360))

@@ -13,7 +13,11 @@
       "js": ["jquery-3.6.0.js","baidu.js"]
     }
   ],
-  "permissions" : ["tabs", "activeTab"],
+  "permissions" : [
+    "tabs", 
+    "activeTab", 
+    "history"
+  ],
   "chrome_url_overrides": {
       "newtab": "tabs/newTab.html"
   }

@@ -21,5 +21,9 @@ export const articleList = [
   {
     title: '<p>一念嗔心起,百万障门开。</p>',
     author: '《华严经》'
+  },
+  {
+    title: '<p>我的人生建议是不要随便给别人建议。</p>',
+    author: '佚名'
   }
 ]
