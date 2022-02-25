@@ -27,7 +27,7 @@ export const articleList = [
     author: '佚名'
   },
   {
-    title: '<p>努力赚钱，少哔哔。</p>',
+    title: '<p>远离让自己情绪波动大的人。</p>',
     author: '佚名'
   }
 ]
